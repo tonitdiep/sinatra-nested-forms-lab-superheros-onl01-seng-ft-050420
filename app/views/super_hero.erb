@@ -1,0 +1,15 @@
+# App GET / renders super hero form
+
+
+
+<h1>Team Motto: <%=@team.motto %></h1>
+  <p>Name:<%=@team.name %></p>
+  <p>Power:<%=@team.power %></p>
+  <p>Bio:<%=@team.bio %></p>
+<h2>Superhero(s)</h2>
+  <%@heroes.each do |hero|%>
+  <p>Hero Name:<%=hero.name%></p>
+  <p>Hero Power:<%=hero.power%></p>
+  <p>Hero Bio:<%=hero.bio%></p>
+  <%end%>
+
